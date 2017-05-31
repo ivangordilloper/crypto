@@ -1,4 +1,4 @@
-/*--A Design by W3layouts 
+/*--A Design by W3layouts
 Author: W3layout
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -20,7 +20,7 @@ body a{
 	margin: 0;
 }
 h1,h2,h3,h4,h5,h6,label,p{
-	margin:0;	
+	margin:0;
 }
 .line{
 	background:#d2232a;
@@ -72,7 +72,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 	  padding: 0 0.5em;
 }
 .header-bottom-in{
-	float:right;	
+	float:right;
 }
 .header-bottom-in li{
 	display:inline-block;
@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,h6,label,p{
 }
 .header-bottom {
 	background: #4f4f4f;
-	padding: 1em;	
+	padding: 1em;
 	margin: 0em 0 0;
 }
 select.in-drop {
@@ -132,7 +132,7 @@ select.in-drop {
 	padding: 5px 15px;
 	font-size: 15px;
 	color: #ffffff;
-	
+
 }
 .sb-search-input::-webkit-input-placeholder {
 	color: #ffffff;
@@ -174,7 +174,7 @@ select.in-drop {
 	z-index: 90;
 	  width: 30px;
   height: 30px;
-	
+
 }
 /* Open state */
 .sb-search.sb-search-open,.no-js .sb-search {
@@ -190,7 +190,7 @@ select.in-drop {
 }
 .h_menu4 {
   float: left;
-    
+
 }
 /* start h_menu */
 .toggleMenu {
@@ -220,8 +220,8 @@ select.in-drop {
 }
 .nav:before,
 .nav:after {
-    content: " "; 
-    display: table; 
+    content: " ";
+    display: table;
 }
 .nav:after {
     clear: both;
@@ -229,7 +229,7 @@ select.in-drop {
 .nav ul {
     list-style: none;
 	width: 18em;
-	
+
 	z-index:888;
 }
 .nav li a {
@@ -254,7 +254,7 @@ select.in-drop {
     position: relative;
 }
 .nav li.active{
-	color:#fff;	
+	color:#fff;
 }
 .nav  li  a i{
 	background: url(../images/arrow.png) no-repeat 0px 4px;
@@ -299,7 +299,7 @@ select.in-drop {
 	width: 100%;
 	text-decoration: none;
 	margin: 0;
-	
+
 }
 .nav li li a{
 	font-size:1.2em;
@@ -326,7 +326,7 @@ select.in-drop {
 		float: none;
 		margin: 4% 0;
 	}
-	
+
 	.toggleMenu {
 		padding: 5px 10px;
 		width: 100%;
@@ -335,7 +335,7 @@ select.in-drop {
 		padding: 10px 15px;
 	}
 	.nav {
-		
+
 	}
     .active {
         display: block;
@@ -440,21 +440,21 @@ h6.your-in {
 	background: url(../images/img-sprite.png)no-repeat -18px -11px ;
 	width: 60px;
 	min-height: 60px;
-	display: block;	
+	display: block;
 	margin: 0 auto;
 	text-align:center;
 }
 .run i.foot-in{
-	background-position:-84px -11px ;	
+	background-position:-84px -11px ;
 }
 .run i.cycling{
-	background-position:-162px -11px ;	
+	background-position:-162px -11px ;
 }
 .run i.fitness{
-	background-position:-248px -11px ;	
+	background-position:-248px -11px ;
 }
 .run i.tennis{
-	background-position:-323px -11px ;	
+	background-position:-323px -11px ;
 }
 .run p{
 	font-size:1.3em;
@@ -462,7 +462,7 @@ h6.your-in {
 }
 /*----*/
 .content-grids{
-	
+
 	padding:6em 4em;
 }
 .lot{
@@ -477,7 +477,7 @@ h6.your-in {
 .shoe p{
 	font-size:1.25em;
 	color:#000;
-	line-height:1.5em;	  
+	line-height:1.5em;
 }
 .shoe label{
 	font-size: 2em;
@@ -651,28 +651,28 @@ a.view:hover{
 .product-top {
 	padding: 2em 0;
 }
-.product-grid {	
+.product-grid {
 	position:relative;
 }
-.product-grid:hover{	
+.product-grid:hover{
 	background:#fff;
 }
-.product-grid:hover .shoe-in{	
+.product-grid:hover .shoe-in{
 	background:#d2232a;
 }
 
 .product-grid img{
-	margin:0 auto;	
+	margin:0 auto;
 }
 .shoe-in{
 	padding: 1em;
 }
 .shoe-in h6{
 	font-size:1.2em;
-	line-height:1.8em;	  
+	line-height:1.8em;
 }
 .shoe-in h6 a{
-	color:#000; 
+	color:#000;
 	text-decoration:none;
 }
 
@@ -700,14 +700,14 @@ b.plus-on {
   left: 4%;
 }
 .product-grid:hover .shoe-in h6 a,.product-grid:hover .shoe-in label,
-.product-grid:hover .shoe-in a{	
+.product-grid:hover .shoe-in a{
 	color:#fff;
 }
 /*--login--*/
 .account h2,.register h2{
 	font-size: 3em;
 	color: #222;
-	text-align:center;	
+	text-align:center;
 }
 .account-top span,.register-top span{
 	font-size:1.3em;
@@ -722,17 +722,17 @@ b.plus-on {
 	padding:14px;
 	width:100%;
 	background:#fff;
-	border: none;	
+	border: none;
 	outline:none;
 	color:#464646;
-	font-size:1em;	
+	font-size:1em;
 }
 .register-top input[type="text"],.register-top textarea,.register-top input[type="password"]{
 	width:60%;
 }
 .account-top textarea,.register-top textarea{
 	resize:none;
-	height:60px;		
+	height:60px;
 }
 .account-top input[type="submit"],.register-top input[type="submit"]{
 	outline:none;
@@ -747,7 +747,7 @@ b.plus-on {
 	-webkit-transition: 0.5s all;
 	-o-transition: 0.5s all;
 	-moz-transition: 0.5s all;
-	-ms-transition: 0.5s all;	
+	-ms-transition: 0.5s all;
 	font-size: 1.2em;
 }
 .account-top input[type="submit"]:hover,.register-top input[type="submit"]:hover{
@@ -790,11 +790,11 @@ a.forgot {
 	padding:3em 0 2em;
 }
 .left-account{
-	position:relative;	
+	position:relative;
 }
 a.create{
 	text-decoration:none;
-	color:#fff;	
+	color:#fff;
 	padding: 7px 20px;
 	background: #d2232a;
 	margin: 0 auto;
@@ -957,7 +957,7 @@ a.cart:hover{
 	color:#000;
 	font-size:1.5em;
 	padding:0.5em;
-	border-bottom:1px solid #C5933D	
+	border-bottom:1px solid #C5933D
 }
 .single {
   padding: 4em 0;
@@ -1029,7 +1029,7 @@ a.elit{
 	color:#000;
 }
 a.elit:hover{
-	color:#d2232a;	
+	color:#d2232a;
 	text-decoration:underline;
 }
 span.price-in{
@@ -1102,14 +1102,14 @@ ul.social-in {
   background:#222222;
 }
 ul.social-in li{
-	display: inline-block;	
+	display: inline-block;
 }
 ul.social-in li  i{
 	background:url(../images/img-sprite.png)no-repeat -16px -182px ;
 	width: 40px;
 	height: 40px;
 	display: inline-block;
-	margin: 0 3px;	
+	margin: 0 3px;
 }
 ul.social-in li  i.youtube{
 	background-position: -114px -182px;
@@ -1176,7 +1176,7 @@ p.footer-class a{
 }
 p.footer-class a:hover{
   color:#fff;
-  
+
 }
 /*--responsive--*/
 @media(max-width:1440px){
@@ -1748,7 +1748,7 @@ a.elit {
 .contact h2{
 	padding:0 0 0.2em;
 }
-.account input[type="text"], .account textarea, .account input[type="password"] 
+.account input[type="text"], .account textarea, .account input[type="password"]
 ,.contact-grid input[type="text"], .contact-grid textarea,
 .register-top input[type="text"], .register-top textarea, .register-top input[type="password"]{
   padding: 10px;
@@ -1815,4 +1815,55 @@ a.elit {
 a.create {
   width: 61%;
 }
+}
+
+
+.message.error {
+    background-color: #C3232D;
+    color: #FFF;
+}
+.message {
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    padding: 0 1.5rem 0 1.5rem;
+    transition: height 300ms ease-out 0s;
+    background-color: #a0d3e8;
+    color: #626262;
+    top: 15px;
+    right: 15px;
+    z-index: 999;
+    overflow: hidden;
+    height: 50px;
+    line-height: 2.5em;
+    box-radius: 5px;
+}
+input[type="text"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+	    width: 100%;
+}
+input[type="text"]:focus,
+input[type="text"].focus {
+  border: solid 5px #969696;
+}
+
+
+input[type="password"] {
+  padding: 10px;
+  border: solid 5px #c9c9c9;
+  box-shadow: inset 0 0 0 1px #707070;
+  transition: box-shadow 0.3s, border 0.3s;
+	    width: 100%;
+}
+input[type="password"]:focus,
+input[type="password"].focus {
+  border: solid 5px #969696;
+}
+.formulario{
+	padding-top: 71px;
+	padding-bottom: 71px;
 }

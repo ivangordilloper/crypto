@@ -11,10 +11,10 @@ $this->layout = 'ecommerce';
 			<?=$this->Html->link(
     'FIND OUT MORE',
     '/home/product',
-    ['class' => 'find', 'target' => '_blank']
+    ['class' => 'find']
 );?>
 
-			<a href="product" class="shop">SHOP</a>
+			<a href="/home/product" class="shop">SHOP</a>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
@@ -78,7 +78,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic3.jpg" alt="">
 				<div class="run">
 				<i class="fitness"> </i>
@@ -87,7 +87,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic4.jpg" alt="">
 				<div class="run">
 				<i class="tennis"> </i>
@@ -96,7 +96,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic.jpg" alt="">
 				<div class="run">
 				<i> </i>
@@ -105,7 +105,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic1.jpg" alt="">
 				<div class="run">
 					<i class="foot-in"> </i>
@@ -114,7 +114,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic2.jpg" alt="">
 				<div class="run">
 				<i class="cycling"> </i>
@@ -123,7 +123,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic3.jpg" alt="">
 				<div class="run">
 				<i class="fitness"> </i>
@@ -132,7 +132,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic4.jpg" alt="">
 				<div class="run">
 				<i class="tennis"> </i>
@@ -141,7 +141,7 @@ $this->layout = 'ecommerce';
 				</a>
 			</div>
 			<div class="item">
-				<a href="single.html" title="image" rel="title1">
+				<a href="/home/one" title="image" rel="title1">
 					<img class="img-responsive " src="images/pic.jpg" alt="">
 				<div class="run">
 				<i> </i>
@@ -160,32 +160,32 @@ $this->layout = 'ecommerce';
 	<div class="content-grids">
 
 	<div class="col-md-4 content-grid">
-		<a href="single.html" class="lot"><img class="img-responsive " src="images/sh.png" alt=""></a>
+		<a href="/home/one" class="lot"><img class="img-responsive " src="images/sh.png" alt=""></a>
 		<div class="shoe">
 			<p>Nike 3.0 V4 Men Grey Royal
 			Blue with White</p>
 			<label>$67.99</label>
-			<a href="single.html">find a store</a>
+			<a href="/home/one">find a store</a>
 		</div>
 		<div class="clearfix"> </div>
 		<b class="plus-in">+</b>
 	</div>
 	<div class="col-md-4 content-grid">
-		<a href="single.html" class="lot"><img class="img-responsive " src="images/sh1.png" alt=""></a>
+		<a href="/home/one" class="lot"><img class="img-responsive " src="images/sh1.png" alt=""></a>
 		<div class="shoe">
 			<p>Nike 3.0 V4 Men Grey RoyalBlue with White</p>
 			<label>$67.99</label>
-			<a href="single.html">find a store</a>
+			<a href="/home/one">find a store</a>
 		</div>
 		<div class="clearfix"> </div>
 		<b class="plus-in">+</b>
 	</div>
 	<div class="col-md-4 content-grid">
-		<a href="single.html" class="lot"><img class="img-responsive " src="images/sh2.png" alt=""></a>
+		<a href="/home/one" class="lot"><img class="img-responsive " src="images/sh2.png" alt=""></a>
 		<div class="shoe">
 			<p>Nike 3.0 V4 Men Grey RoyalBlue with White</p>
 			<label>$67.99</label>
-			<a href="single.html">find a store</a>
+			<a href="/home/one">find a store</a>
 		</div>
 
 		<div class="clearfix"> </div>
@@ -197,13 +197,13 @@ $this->layout = 'ecommerce';
 	<!---->
 	<div class="content-top">
 		<div class="col-md-4 top-content">
-			<a href="single.html"><img class="img-responsive " src="images/pi.jpg" alt=""></a>
+			<a href="/home/one"><img class="img-responsive " src="images/pi.jpg" alt=""></a>
 		</div>
 		<div class="col-md-4 top-content">
-			<a href="single.html"><img class="img-responsive " src="images/pi1.jpg" alt=""></a>
+			<a href="/home/one"><img class="img-responsive " src="images/pi1.jpg" alt=""></a>
 		</div>
 		<div class="col-md-4 top-content">
-			<a href="single.html"><img class="img-responsive " src="images/pi2.jpg" alt=""></a>
+			<a href="/home/one"><img class="img-responsive " src="images/pi2.jpg" alt=""></a>
 		</div>
 
 		<div class="clearfix"> </div>
@@ -226,11 +226,11 @@ $this->layout = 'ecommerce';
 						<div class="callbacks_container">
 						  <ul class="rslides" id="slider">
 							<li>
-							  <img src="images/vi.jpg" alt="">
+								<?php echo $this->Html->image('expo1.jpg', ['class' => '']); ?>
 
 							</li>
 							<li>
-							  <img src="images/v2.jpg" alt="">
+								<?php echo $this->Html->image('expo2.jpg', ['class' => '']); ?>
 
 							</li>
 							<li>
@@ -240,8 +240,8 @@ $this->layout = 'ecommerce';
 						  </ul>
 					  </div>
 					  <div class="london">
-						<h5>London Marathon 2013</h5>
-						<p>24/2013 - 6Mins</p>
+						<h5>EXPO ESCOM 2016</h5>
+						<p></p>
 					  </div>
 					</div>
 

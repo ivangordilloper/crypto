@@ -52,18 +52,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	</div>
 	<div class="header">
 		<div class="logo">
-			<a href="index.html"><?php echo $this->Html->image('logo.png',['style'=> "height:100px;"]);?></a>
+			<a href="/home"><?php echo $this->Html->image('logo.png',['style'=> "height:100px;"]);?></a>
 		</div>
 		<div  class="header-top">
 			<div class="header-grid">
 				<ul class="header-in">
 						<li ><a href="account.html">My Account   </a> </li>
 						<li>
-							<select class="in-drop">
-							  <option value="Dollars" class="in-of">Dollars</option>
-							  <option value="Euro" class="in-of">Euro</option>
-							  <option value="Yen" class="in-of">Yen</option>
-							</select>
+
 						</li>
 					</ul>
 					<div class="search-box">
@@ -83,7 +79,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						</script>
 					<!-- //search-scripts -->
 					<div class="online">
-					<a href="single.html" >SHOP ONLINE</a>
+					<a href="/home" >SHOP ONLINE</a>
 					</div>
 					<div class="clearfix"> </div>
 			</div>
@@ -93,7 +89,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<ul class="nav">
 					<li class="active"><?php echo $this->Html->link('Running',['controller' => 'home', 'action' => 'product', '_full' => true]);?></li>
 
-					<li><a href="product.html">More <i> </i></a>
+					<li><a href="/home/product">More <i> </i></a>
 						<ul>
 							<li><a href="contact.html">Contact</a></li>
 							<li><a href="account.html">Account</a></li>
@@ -105,15 +101,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			</div><!-- end h_menu4 -->
 					<ul class="header-bottom-in">
 						<li ><select class="drop">
-							  <option value="Dollars" class="in-of">Get Active</option>
-							  <option value="Euro" class="in-of">Get Active1</option>
-							  <option value="Yen" class="in-of">Get Active2</option>
+							  <option value="Dollars" class="in-of">ESCOM</option>
+
 							</select> </li>
-						<li ><select class="drop">
-							  <option value="Dollars" class="in-of">Community</option>
-							  <option value="Euro" class="in-of">Community1</option>
-							  <option value="Yen" class="in-of">Community2</option>
-							</select></li>
+						<li ></li>
 					</ul>
 			<div class="clearfix"> </div>
 		</div>
@@ -129,17 +120,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			<h4>Sports</h4>
 			<div class="run-top">
 				<ul class="run-grid">
-					<li><a href="product.html">RUNNING</a></li>
-					<li><a href="product.html">CYCLING</a></li>
-					<li><a href="product.html">TRIATHLON</a></li>
-					<li><a href="product.html">FITNESS</a></li>
-					<li><a href="product.html">TENNIS</a></li>
-					<li><a href="product.html">MORE SPORTS</a></li>
+					<li><a href="/home/product">RUNNING</a></li>
+					<li><a href="/home/product">CYCLING</a></li>
+					<li><a href="/home/product">TRIATHLON</a></li>
+					<li><a href="/home/product">FITNESS</a></li>
+					<li><a href="/home/product">TENNIS</a></li>
+					<li><a href="/home/product">MORE SPORTS</a></li>
 				</ul>
 				<ul class="run-grid">
-					<li><a href="product.html">STYLE</a></li>
-					<li><a href="product.html">SPECIAL</a></li>
-					<li><a href="product.html">BRAND EVENTS</a></li>
+					<li><a href="/home/product">STYLE</a></li>
+					<li><a href="/home/product">SPECIAL</a></li>
+					<li><a href="/home/product">BRAND EVENTS</a></li>
 				</ul>
 			<div class="clearfix"> </div>
 			</div>
@@ -151,7 +142,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li><a href="#">News & Events</a></li>
 					<li><a href="#">Community</a></li>
 					<li><a href="#">Videos</a></li>
-					<li><a href="single.html">Shopping</a></li>
+					<li><a href="/home/one">Shopping</a></li>
 					<li><a href="#">Sponsorships</a></li>
 					<li><a href="#">more sports</a></li>
 				</ul>

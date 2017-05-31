@@ -1,24 +1,30 @@
 <?php
+$this->layout = 'ecommerce';
+?>
+<?php
 /**
   * @var \App\View\AppView $this
   */
 ?>
-<nav class="large-3 medium-4 columns" id="actions-sidebar">
-    <ul class="side-nav">
-        <li class="heading"><?= __('Actions') ?></li>
-        <li><?= $this->Html->link(__('List Users'), ['action' => 'index']) ?></li>
-    </ul>
-</nav>
+<div class="row formulario">
+<div class="col-lg-3 "></div>
+<div class="col-lg-6">
 <div class="users form large-9 medium-8 columns content">
     <?= $this->Form->create($user) ?>
     <fieldset>
-        <legend><?= __('Add User') ?></legend>
+        <legend><?= __('Agregar Usuario') ?></legend>
         <?php
-            echo $this->Form->control('username');
-            echo $this->Form->control('password');
-            echo  $this->Form->control('role', ['options' => ['admin' => 'Admin', 'user' => 'Usuario']]);
+
+            ?>
+<div class="input text required col-lg-12"><label for="username"></label><input type="text" name="username" required="required" maxlength="50" id="username" placeholder="Username"></div>
+<div class="input password required col-lg-12"><label for="password"></label><input type="password" name="password" required="required"  placeholder="Password" id="password"></div>
+            <input name="role" value="user" type="hidden"/>
+            <?php
         ?>
     </fieldset>
     <?= $this->Form->button(__('Submit')) ?>
     <?= $this->Form->end() ?>
+</div>
+</div>
+<div class="col-lg-3"></div>
 </div>

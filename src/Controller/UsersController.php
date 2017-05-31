@@ -84,7 +84,7 @@ class UsersController extends AppController
 
                 return $this->redirect(['action' => 'index']);
             }
-            $this->Flash->error(__('The user could not be saved. Please, try again.'));
+            $this->Flash->error(__('The user exists, please provide another username'));
         }
         $this->set(compact('user'));
         $this->set('_serialize', ['user']);

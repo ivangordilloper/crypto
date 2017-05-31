@@ -44,4 +44,10 @@ class HomeController extends AppController
     {
       # code...
     }
+    public function buy($value='')
+    {
+      $rsa = new Crypt_RSA();
+
+      # code...
+    }
 }
