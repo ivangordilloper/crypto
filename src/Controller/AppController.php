@@ -39,6 +39,8 @@ class AppController extends Controller
      */
     public function initialize()
     {
+        date_default_timezone_set("America/Mexico_City");
+
         parent::initialize();
 
         $this->loadComponent('RequestHandler');
@@ -51,7 +53,6 @@ class AppController extends Controller
             'logoutRedirect' => [
                 'controller' => 'home',
                 'action' => 'index',
-                'home'
             ]
         ]);
 
@@ -63,10 +64,31 @@ class AppController extends Controller
         //$this->loadComponent('Csrf');
     }
 
+    public function validateToken($token=null,$uuid){
+        $this->loadModel('Cards');
+        if($token){
+            $card = $this->Cards->find()->where(['token'=>$token, 'uuid'=>$uuid])->toArray()[0];
+            if(!empty($card)){
+                $time_token =($card['created']);
+                $to_time = strtotime($time_token);
+                $from_time = strtotime(date_create()->format('Y-m-d H:i:s.u'));
+                $seconds = round(abs($to_time - $from_time) ,2) ;
+                #return $interval = $time_token->diff($time_token);
+                if($seconds>(60*5)){
+                    return 2;
+                }else{
+                    return 1;
+                }
+
+            }else{
+                return 0;
+            }
+        }
+
+    }
 
    public function beforeFilter(Event $event)
    {
-       $this->Auth->allow(['index', 'view', 'display']);
    }
 
     /**
@@ -82,5 +104,16 @@ class AppController extends Controller
         ) {
             $this->set('_serialize', true);
         }
+    }
+
+    public function isAuthorized($user)
+    {
+        // Admin can access every action
+        if (isset($user['role']) && $user['role'] === 'admin') {
+            return true;
+        }
+
+        // Default deny
+        return false;
     }
 }

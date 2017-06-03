@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE html>
 <html>
 <head>
-<title>Sport A Ecommerce Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<title>Get-It</title>
 <?php echo $this->Html->css('bootstrap');?>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <?php echo $this->Html->script('jquery.min'); ?>
@@ -57,7 +57,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div  class="header-top">
 			<div class="header-grid">
 				<ul class="header-in">
-						<li ><a href="account.html">My Account   </a> </li>
+						<li ><a href="/users/profile">My Account   </a> </li>
 						<li>
 
 						</li>

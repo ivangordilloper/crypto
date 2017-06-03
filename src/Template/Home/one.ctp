@@ -11,7 +11,7 @@ $this->layout = 'ecommerce';
         <div class="col-md-5 single-top">
           <ul id="etalage">
             <li>
-              <a href="optionallink.html">
+              <a href="#">
 
                 <?php echo $this->Html->image('si1.jpg', ['class'=>'etalage_thumb_image img-responsive']);?>
                 <?php echo $this->Html->image('s2.jpg', ['class'=>'etalage_source_image img-responsive']);?>
@@ -61,8 +61,20 @@ $this->layout = 'ecommerce';
 
             </ul>
           </div>
+            <form>
+              <div class="input text required col-lg-12"><label for="card"></label><input type="text" name="card" required="required" maxlength="50" id="card" placeholder="Card Number"></div>
+              <div class="input text required col-lg-4"><label for="month"></label><input type="text" name="month" required="required"  placeholder="Month" id="month"></div>
 
-              <a href="/home/buy" class="cart ">Buy!</a>
+              <div class="input text required col-lg-4"><label for="year"></label><input type="text" name="year" required="required" maxlength="50" id="year" placeholder="Year"></div>
+              <div class="input text required col-lg-4"><label for="cvv"></label><input type="text" name="cvv" required="required"  placeholder="CVV" id="cvv" ></div>
+              <div class="input text required col-lg-0"><label for="uuid"></label><input type="hidden" value="<?=uniqid()?>" name="uuid" required="required" id="uuid" placeholder="uuid" ></div>
+
+                  <div>
+                      <a class="cart "onclick="cardToken()">Buy!</a>
+              </div>
+
+            </form>
+
 
           </div>
         </div>
@@ -145,3 +157,99 @@ $this->layout = 'ecommerce';
       <div class="clearfix"> </div>
   </div>
 </div>
+
+
+<script>
+
+    function cardToken() {
+        var card= $("#card").val()
+        console.log(card);
+        var month= $("#month").val()
+        var year= $("#year").val()
+        var cvv= $("#cvv").val()
+        var uuid=  $("#uuid").val()
+
+        if((card==='')){
+            alert('Card must be present')
+        }else if(month===''){
+            alert('Month must be present')
+
+        }else if(year===''){
+            alert('Year must be present')
+
+        }else if(cvv===''){
+            alert('CVV must be present')
+
+        }
+        else {
+            var form = new FormData();
+            form.append("card", card);
+            form.append("month", month);
+            form.append("year", year);
+            form.append("cvv", cvv);
+            form.append("uuid", uuid);
+
+            var settings = {
+                "async": true,
+                "crossDomain": true,
+                "url": "/home/getToken",
+                "method": "POST",
+                "headers": {
+                    "cache-control": "no-cache",
+                    "postman-token": "13267b6e-320c-0bd9-35be-8a7f42913603"
+                },
+                "processData": false,
+                "contentType": false,
+                "mimeType": "multipart/form-data",
+                "data": form
+            }
+
+            $.ajax(settings).done(function (response) {
+                console.log(response);
+                confirm(response);
+            });
+        }
+
+    }
+
+    function confirm(response) {
+        var uuid=  $("#uuid").val()
+
+        var form = new FormData();
+
+        form.append("data", response);
+        form.append("uuid", uuid)
+
+        var settings = {
+            "async": true,
+            "crossDomain": true,
+            "url": "/home/confirm",
+            "method": "POST",
+            "headers": {
+                "cache-control": "no-cache",
+                "postman-token": "13267b6e-320c-0bd9-35be-8a7f42913603"
+            },
+            "processData": false,
+            "contentType": false,
+            "mimeType": "multipart/form-data",
+            "data": form
+        }
+
+        $.ajax(settings).done(function (response) {
+            console.log(response);
+            messages(response);
+        });
+
+
+    }
+
+    function messages(response) {
+        window.location.replace('/home/finish/'+response)
+    }
+
+
+
+
+
+
+</script>

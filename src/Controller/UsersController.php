@@ -16,10 +16,17 @@ class UsersController extends AppController
   public function beforeFilter(Event $event)
     {
         parent::beforeFilter($event);
+
+        $role= $this->Auth->user('role');
+        if($role=='admin'){
+            $this->Auth->allow(['*']);
+
+        }else if($role=='user'){
+            $this->Auth->allow(['add', 'logout']);
+        }
         // Allow users to register and logout.
         // You should not add the "login" action to allow list. Doing so would
         // cause problems with normal functioning of AuthComponent.
-        $this->Auth->allow(['add', 'logout']);
     }
 
 
@@ -61,6 +68,8 @@ class UsersController extends AppController
      */
     public function view($id = null)
     {
+
+
         $user = $this->Users->get($id, [
             'contain' => []
         ]);
@@ -68,12 +77,30 @@ class UsersController extends AppController
         $this->set('user', $user);
         $this->set('_serialize', ['user']);
     }
+    public function profile($id = null)
+    {
 
+        $id = $this->Auth->user('id');
+        $user = $this->Users->get($id, [
+            'contain' => []
+        ]);
+
+        $this->set('user', $user);
+        $this->set('_serialize', ['user']);
+    }
     /**
      * Add method
      *
      * @return \Cake\Http\Response|null Redirects on successful add, renders view otherwise.
      */
+
+    public function transactions(){
+        $this->loadModel('Transactions');
+        $id = $this->Auth->user('id');
+
+        $transactions =$this->Transactions->find()->contain(['Users'])->where(['user_id'=>$id]);
+        $this->set('transactions',$transactions);
+    }
     public function add()
     {
         $user = $this->Users->newEntity();
@@ -82,7 +109,7 @@ class UsersController extends AppController
             if ($this->Users->save($user)) {
                 $this->Flash->success(__('The user has been saved.'));
 
-                return $this->redirect(['action' => 'index']);
+                return $this->redirect(['action' => 'login']);
             }
             $this->Flash->error(__('The user exists, please provide another username'));
         }
